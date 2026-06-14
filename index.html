@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FM26 Tactic Analyzer</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>⚽ FM26 Tactic Analyzer</h1>
+
+    <div class="card">
+        <h2>Formation</h2>
+
+        <select id="formation">
+            <option>4-3-3 DM Wide</option>
+            <option>4-2-3-1 Wide</option>
+            <option>4-4-2</option>
+            <option>5-2-3 WB</option>
+            <option>3-4-2-1</option>
+        </select>
+    </div>
+
+    <div class="card">
+        <h2>Mentality</h2>
+
+        <select id="mentality">
+            <option>Very Defensive</option>
+            <option>Defensive</option>
+            <option>Balanced</option>
+            <option>Positive</option>
+            <option>Attacking</option>
+            <option>Very Attacking</option>
+        </select>
+    </div>
+
+    <div class="card">
+        <h2>Roles</h2>
+
+        <select id="striker">
+            <option>Advanced Forward</option>
+            <option>Pressing Forward</option>
+            <option>Target Forward</option>
+        </select>
+
+        <select id="midfielder">
+            <option>Box To Box Midfielder</option>
+            <option>Deep Lying Playmaker</option>
+            <option>Ball Winning Midfielder</option>
+        </select>
+
+        <select id="winger">
+            <option>Inside Forward</option>
+            <option>Winger</option>
+            <option>Inverted Winger</option>
+        </select>
+    </div>
+
+    <button onclick="analyzeTactic()">
+        Analyze Tactic
+    </button>
+
+    <div id="results"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
